@@ -1,0 +1,127 @@
+@charset "UTF=8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter&family=Josefin+Sans:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color:#428069;
+    --color1:#F2E9E2;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color1);
+}
+
+p{
+    color: #8a8885;
+}
+
+.conteudo{
+    background-color: #ffffff;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 90px;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.24);
+}
+
+.foto-perfume{
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.conteudo-texto{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.nome-produto{
+    letter-spacing: 3px;
+}
+
+.titulo{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+}
+
+.precos{
+    display: flex;
+}
+
+.preco-atual{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    color: var(--color);
+    margin-right: 30px;
+}
+
+.botao{
+    background: var(--color);
+    color: #ffffff;
+
+    height: 35px;
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.botao:hover{
+    background-color: #033b27;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 640px){
+    .conteudo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        width: 340px;
+        height: 720px;
+    }
+
+    .foto-perfume{
+        width: 340px;
+        height: 300px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .nome-produto{
+        margin-top: -10px;
+    }
+
+    .titulo{
+        margin-top: -10px;
+        font-size: 29px;
+    }
+
+    .texto-produto{
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+
+    .preco-antigo{
+        font-size: 14px;
+    }
+
+}

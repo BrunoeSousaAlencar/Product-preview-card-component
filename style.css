@@ -28,12 +28,17 @@ p{
     border-radius: 10px;
     margin-top: 90px;
     box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.24);
+    transition: .1s;
 }
 
-.foto-perfume{
+.foto-perfume-desktop{
     width: 300px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.foto-perfume-mobile{
+    display: none;
 }
 
 .conteudo-texto{
@@ -96,14 +101,18 @@ p{
         margin-bottom: 20px;
         display: block;
         width: 340px;
-        height: 720px;
+        height: 610px;
     }
 
-    .foto-perfume{
+    .foto-perfume-desktop{
+        display: none;
+    }
+
+    .foto-perfume-mobile{
+        display: block;
         width: 340px;
-        height: 300px;
+        border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
     }
 
     .nome-produto{
@@ -118,6 +127,10 @@ p{
     .texto-produto{
         margin-top: -10px;
         margin-bottom: 40px;
+    }
+
+    .preco-atual{
+        margin-left: 10px;
     }
 
     .preco-antigo{
